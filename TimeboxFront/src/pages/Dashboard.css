@@ -1,0 +1,65 @@
+/* src/pages/Dashboard.css */
+.dashboard-screen {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-header {
+  background-color: #000;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-content {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border: 2px solid black;
+  box-shadow: 6px 6px 0px black;
+}
+
+.stat-card h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #666;
+}
+
+.stat-card p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.btn-action {
+  grid-column: 1 / -1;
+  background-color: #99CCCC; /* El color de tu planificador */
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 6px 6px 0px black;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  transition: transform 0.1s;
+}
+
+.btn-action:active {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0px black;
+}
